@@ -8,6 +8,7 @@ double calculateAirfare(double baseFare) {
 
 	double fare = baseFare;              
     fare += immigrationFee;
+    fare += customsFee; //Fixed by Bob
     fare *= (1 + federalTransportTax);
     return fare;
 }
