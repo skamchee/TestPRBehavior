@@ -7,6 +7,7 @@ double calculateAirfare(double baseFare) {
 	double federalTransportTax = .025;  
 
 	double fare = baseFare;              
+	fare += customsFee //Fixed by Alice            
     fare += immigrationFee;
     fare *= (1 + federalTransportTax);
     return fare;
